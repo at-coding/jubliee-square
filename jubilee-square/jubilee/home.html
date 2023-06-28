@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Thu 22 Sep 2022 17:28:25 :   -->
+	<meta charset="UTF-8">
+	<title>Jubilee</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="css/global.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/mobile.css">
+	<style>
+	
+	.cover {
+	    overflow: hidden;
+	    position: relative;
+	    width: 100%;
+	    height: 37.5%;
+	}
+	
+	h1 {
+	    text-transform: uppercase;
+	    font-weight: 400;
+	    letter-spacing: 4px;
+	    margin: 3%;
+	    margin-left: 5%;
+	    margin-right: 5%;
+	
+	    font-size: 2.4em;
+	
+	}
+	
+	#cover-title {
+	    max-width: 93vw;
+	    margin: 5%;
+	    padding: 1%;
+	    line-height: 1.1em;
+	    border-left: solid 3px var(--color003);
+	}
+	
+	
+	.cover img {
+	    vertical-align: middle
+	}
+	
+	
+	.cover .content {
+	    position: absolute;
+	    bottom: 0;
+	    background: var(--color004);
+	    width: 100%;
+	    height: 100%;
+	}
+	
+	.row {
+	    display: flex;
+	}
+	
+	.left {
+	    width: 59%;
+	    height: 100%;
+	}
+	
+	.right {
+	    width: 50%;
+	    height: 100%;
+	    text-align: right;
+	    border-left: solid 3px var(--color003);
+	}
+	
+	a{
+	    cursor: pointer;
+	    text-decoration: none;
+	    color: var(--color001);
+	}
+	
+	.box {
+	    position: relative;
+	    display: inline-block;
+	}
+	
+	.box img {
+	    vertical-align: middle;
+	}
+	
+	.box .content {
+	    position: absolute;
+	    bottom: 0;
+	    background: var(--color004);
+	
+	    width: 100%;
+	
+	    line-height: 0.0em;
+	}
+	
+	.content> h1{
+	    padding-top: 0.25em;
+	    padding-bottom: 0.12em;
+	}
+	
+	.commerce{
+	    padding-top: .26em;
+	}
+	
+	.label {
+	    margin-left: 5%;
+	    margin-right: 5%;
+	
+	    font-weight: 300;
+	    font-size: 1.2em;
+	
+	    text-transform: capitalize;
+	}
+	
+	#address-btm {
+	    display: none;
+	    font-weight: 200
+	}
+	
+	@media screen and (max-width: 840px) {
+		
+	    /* add line */
+	    .cover .content {
+	        border-bottom: solid 3px var(--color003);
+	    }
+	
+	    /* hide line */
+	    .right {
+	        border-left: 0px;
+	        text-align: left;
+	    }
+	
+	    .row {
+	        display: block;
+	    }
+	
+	    .left,
+	    .right {
+	        width: 100%;
+	    }
+	
+	
+	    .box {
+	        display: block;
+	    }
+
+		
+		.label > img{
+	    padding-bottom: .5em;
+		}
+	    
+	    p {
+	        font-size: 0.8em;
+	    }
+	
+	}
+
+
+	/* Samsung  devices */
+	@media only screen and (max-width: 619px) {
+	
+	    h1 {
+	        font-size: 1em;
+	    }
+	
+	    p {
+	        font-size: 0.6em;
+	    }
+	
+	}
+		   
+	</style>   
+</head>
+<body>
+
+    <header>
+    <div class="header-container">
+    
+    <div><img id="jubilee" src="images/jubilee-square.png" alt="jubilee logo"></div>
+
+    <div id="ad-box"><h6 id="address">VICTORIA STREET, ST ALBANS, AL1 3HZ</h6></div>
+
+    <div><img id="flower" src="images/svg/flower.svg" alt="flower"></div>
+
+    </div>
+    </header>
+
+    <main>
+
+        <!-- main cover -->
+        <div class="cover">
+            <img width="100%" src="images/commerical.jpg" alt="building"/>
+        <div class="content">
+             <h1 id="cover-title">A stunning new mixed <br> use development</h1>
+        </div>
+        </div>
+   
+        <!-- row start -->
+
+        <div class="row">
+        <!-- box left -->
+		<a href="https://www.frosts.co.uk/new-homes">
+			
+        <div class="left">
+
+        <div class="box">
+            <img src="images/residential.png" alt="residential" width="100%">
+            <div class="content">
+                <h1>Residential</h1>
+            </div>        
+        </div>
+    
+            <div class="label">
+            <p>A selection of 1 & 2 bedroomed apartments offering a high level of specification</p>
+            <img src="images/logos/frost.jpg" alt="frost logo" width="19%">
+            </div>
+            </a>
+        </div>
+        
+        <!-- box right -->
+        <div class="right">
+        <a href="mailto:matthew.bowen@argroup.co.uk">
+			
+
+        <div class="box">
+            <img src="images/commerical.jpg" alt="commercial" width="100%">
+            
+        <div class="content commerce">
+            <h1>Commercial</h1>
+        </div>
+        </div>
+        
+        <div class="label">
+            <p>Grade A Offices in Exciting City Centre Development From 1,6000sq to 54,1766 sq ft</p>
+            <img src="images/logos/ailogo.jpg" alt="ai-logo" width="21%">
+        </div>
+        </a>
+        </div>
+
+        </div>
+        <!-- row end -->
+
+        <h6 id="address-btm">VICTORIA STREET, ST ALBANS, AL1 3HZ</h6>
+       
+    </main>
+</body>
+</html>

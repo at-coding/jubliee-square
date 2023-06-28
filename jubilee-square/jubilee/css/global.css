@@ -1,0 +1,32 @@
+:root {
+    --color001: white;
+    --color002: rgb(17, 46, 59);
+    --color003: rgb(97, 184, 199);
+    --color004: rgba(0, 0, 0, 0.5);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    height: 100%;
+    color: var(--color001);
+    background: var(--color002);
+    font-family: 'Oswald', sans-serif,Tahoma,Verdana;
+    overflow-x: hidden;
+}
+
+main {
+    max-width: 1024px;
+    margin: auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+a img {
+	border: none;
+}

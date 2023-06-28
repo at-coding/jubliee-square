@@ -1,0 +1,964 @@
+/* --- GLOBAL --- */
+
+:root {
+	
+    --color001: white;
+    --color002: rgb(17, 46, 59);
+    --color003: rgb(97, 184, 199);
+    --color004: rgba(0, 0, 0, 0.5);
+    --color005: rgb(186, 227, 231); 
+    --color004: rgb(17, 46, 59, 0.9);
+    
+    --pic-padding: 10px;
+    
+   }
+
+* { 
+	box-sizing: border-box 
+}
+
+/* --- GENERAL TAGS --- */
+
+body, html {
+	
+    margin: 0;
+    color: var(--color001);
+    background: var(--color002);
+    font-family: 'Oswald', sans-serif,Tahoma;
+    overflow-x: hidden;
+    
+}
+
+main { 
+	
+	margin: auto 
+	
+}
+
+section {
+	
+    margin: auto;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+}
+
+article {
+	
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+    
+}
+
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+
+}
+
+/* --- HELPERS --- */
+    
+.mob-display {
+	
+	display: none;
+	
+}
+
+.mob-hide {
+	
+	display: block;
+	
+}
+	
+/* this */
+.mob-unflex {
+	display: flex;
+	
+}
+
+/* --- GENERAL LAYOUT --- */
+
+.flex-row {
+	
+    display: flex;
+    flex-direction: row;   
+    
+}
+
+.left-box,
+.right-box {
+	
+    width: 50%;
+    
+}
+
+.invert-color {
+	
+    color: black;
+    background: white;
+
+}
+
+.section-footer {
+	
+    position: absolute;
+    margin: auto;
+    bottom: 14px;
+    right: 0%;
+    left: 0%;
+    width: 28px;
+    height: 28px;
+
+}
+
+
+/* --- DESIGN TAGS --- */
+
+h1 {
+	
+    font-weight: 400;
+    line-height: 1;
+    margin: 0%;
+    font-size: 3em;
+    text-transform: uppercase;
+    text-align: left;
+	  margin-right: 40px;
+
+ }
+
+
+	h1:before {
+		
+	     content: "";
+	     background: var(--color003);
+	     position: absolute;
+	     top: 0;
+	     left: -20px;
+	     height: 96px;
+	     width: 6px;
+	     
+	 }
+
+h2 {
+	
+     line-height: 0;
+     font-size: 2em;
+     padding-bottom: 5%;
+     font-weight: 300;
+     text-transform: uppercase;
+     text-align: left;
+     
+}
+
+h3 {
+	
+    line-height: 1.2;
+    font-size: 0.9em;
+    margin-top: 1%;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: left;
+    
+}
+
+/* --- DESIGN ITEMS --- */
+
+.highlight { 
+	
+	color: var(--color003); 
+}
+
+.small-text {
+	
+    font-size: 0.79em;
+    letter-spacing: 0.04em;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.3;
+    
+}
+
+	.small-text p:first-child {
+		
+		margin-top: 0;
+			    
+	}
+	
+.intro-text {
+
+	width: 65%;	
+
+}	
+
+
+.link-btn {
+      padding: 2.5%;
+      background: var(--color003);
+      color: white;
+      white-space: nowrap;
+      font-size: x-small;
+}
+
+
+
+/* Thu 27 Oct 2022 15:39:13 : 
+
+    buttons aligning better 
+    
+    - CHECK .BTNS AS WELL !!!!
+    
+    */
+#site-plan .btns{
+    display: flex;
+    }
+
+/* Tue 25 Oct 2022 13:54:37 :   added so button was less phat */
+.section-plan .link-btn{
+    padding: 12px;
+}
+
+
+
+.arrow { 
+	
+	font-size: 4em; 
+
+}
+
+/* --- HEADER --- */
+
+header {
+    height: 160px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.header-container {
+
+    display: flex;
+    margin: auto;
+    max-width: 90%;
+    position: absolute;
+    width: 1024px;
+    height: 100%;
+    
+}
+
+
+.header-container>div {
+	
+	min-height: 90px;
+	display: flex;
+	width: 100%;
+	margin-left: -20px;
+	}
+
+.hamburger {
+	
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    
+}
+
+	
+.hamburger>div {		
+	font-weight: 300;
+	width: 25px;
+	margin: 2.5px;
+	height: 2px;
+	background: white;
+	}
+
+#nav-overlay {
+	
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(63, 187, 193, 0.95);
+    z-index: 2;
+    cursor: pointer;
+    
+}
+
+	#nav-overlay nav {
+		
+	    text-transform: uppercase;
+	    padding: 5%;
+	    
+	}
+	
+.cross {        
+        z-index: 2;
+        cursor: pointer;
+        float: right;
+        background: transparent;
+        color: white;
+        height: 25px;
+        border: none;
+        
+    }
+		
+	#nav-overlay a {
+		
+	    display: block;
+	    padding: 0.5%;
+	    text-align: left;
+	    color: white;
+	    font-size: 32px;
+
+	}
+
+#nav-overlay a:hover {
+    color: var(--color002)
+    }
+
+
+#branding-box {
+
+    padding: 0.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#jubilee {
+	
+    margin-top: 12px;
+    height: 75%;
+    
+}
+
+#address {
+	
+    white-space: nowrap;
+    font-size: 0.5em;
+    font-weight: 200;
+    letter-spacing: 1px;
+    margin-top: 2%;   
+    }
+
+#watermark {
+    z-index: 1;
+    position: absolute;
+    right: -90px;
+    bottom: -120px;
+    height: 250%;
+    max-height: 260px;
+    
+}
+
+/* --- SECTIONS GENERAL --- */
+
+.content {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 1024px;
+    position: relative;
+    bottom: 0;
+    height: 100%;
+    margin-top: 25px;
+    padding-bottom: 50px;
+}
+
+/* --- Tables --- */
+
+.section-plan table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.section-plan th,
+.section-plan td {
+    padding: 1%;
+    text-align: center;
+}
+
+.section-plan thead tr {
+    background-color: var(--color003);
+}
+
+.section-plan tr:nth-child(even) {
+    background-color: var(--color005);
+    color: var(--color002);
+}
+
+/* --- Buttons --- */
+
+.btns {
+    margin-top: 120px;
+}
+
+.btns a:first-child {
+    margin-right: 12px;
+}
+
+.btns a {
+    font-size: 16px;
+}
+
+/* --- Photos grids --- */
+
+.multi-pic {
+	
+    flex-direction: column;
+    
+}
+
+.mob-stack {
+	
+	flex-direction: row;
+	
+}
+
+.pic-grid {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.pic-grid.c2 .column {
+    width: 50%;
+}
+
+.pic-grid.c3 .column {
+    width: 33.3%;
+    min-height:100%;
+}
+
+.pic-grid .column {
+	box-sizing: content-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0 var(--pic-padding);
+}
+
+.pic-grid .column:first-child {
+    padding-left: 0;
+}
+
+.pic-grid .column:last-child {
+    padding-right: 0;
+}
+
+.pic-grid .column img {
+    padding-bottom: calc( var(--pic-padding) * 2 ); 
+}
+
+.pic-grid.height-fill .column img {
+    flex: 1 auto;
+}
+
+.pic-grid .row {
+	position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: calc( var(--pic-padding) * 2 ); 
+}
+
+.pic-grid .row img {
+    padding: 0 var(--pic-padding);
+    min-width: 0;
+    flex: 1 1 0;
+}
+
+.pic-grid .row img:first-child {
+    padding-left: 0;
+}
+
+.pic-grid .row img:last-child {
+    padding-right: 0;
+}
+
+.pic-base {
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - var(--pic-padding));
+}
+
+
+#explore .pic-grid-con{
+    padding-left: 20%;
+    margin-top: 25px;
+}
+
+#banner, #spec {
+    max-width: 100%;
+    padding: 0;
+    
+}
+
+/* --- PLANS SECTION --- */
+
+#francis {
+	
+	display: none;
+	
+}	  
+	
+   
+/* --- SPEC SECTION --- */
+
+#spec {  
+	
+	min-height: 450px; 
+
+}
+
+.bkg {
+	
+    width: 100%;
+    display: flex;
+    content: center;
+    
+}
+
+#spec ul {
+	
+    column-count: 2;
+    margin: 0;
+    padding: 0;
+    
+}
+
+#spec li {
+	
+    padding-right: 30%;
+    padding-top: 16px;
+    align-items: baseline;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 16px;
+	font-size: 1.2em;
+    
+}
+
+/* --- BALANCE SECTION --- */
+
+.bike-box {
+    overflow: hidden;
+    margin-left: 20px;
+    text-align: right;
+}
+
+	.bike-box img {
+		
+	    width: 94%;
+	}
+
+#balance p {
+	
+    padding: 0;
+    margin: 0;
+    
+}
+
+/* --- GOOD COMPANY --- */
+
+#goodcompany {
+	
+    text-align: center;
+    display: flex;
+    
+}
+
+#brands {
+	
+    width: 80%;
+    margin: auto;
+    
+}
+
+/* --- CONTACT SECTION --- */
+
+#contact h3 {
+	
+    text-transform: uppercase;
+    line-height: 0.5;
+    letter-spacing: 0.06em;
+    margin-top: 10%;
+    
+}
+
+#contact p {
+	
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.06em;
+    line-height: 0.1;
+    
+}
+
+#contact .left-box {   
+	
+	white-space: nowrap; 
+}
+
+#contact .left-box img {
+    margin-top: 5%;
+    margin-bottom: 7.5%;
+}
+
+#contact .small-text {
+	
+    font-size: 0.5em;
+    letter-spacing: 0.06em;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.2;
+    
+}
+
+#contact a {
+	
+    text-transform: capitalize;
+    
+}
+
+/* --- SCROLL ANIMATION FEATURE  --- */
+
+.js-scroll {
+	
+    opacity: 0;
+    transition: opacity 500ms;
+    
+}
+
+.js-scroll.scrolled {
+	
+    opacity: 1
+    
+}
+
+.scrolled.fade-in-bottom {
+	
+    animation: fade-in-bottom 1s ease-in-out both;
+    
+}
+
+/* ---  PAGE 1 ANIMATION FEATURE--- */
+
+@keyframes fade-in-bottom {
+	
+    0% {
+	    
+        -webkit-transform: translateY(50px);
+        transform: translateY(50px);
+        opacity: 0;
+        
+    }
+
+    100% {
+	    
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+        opacity: 1;
+        
+    }
+    
+}
+
+.nudge-bottom {
+	
+    animation: nudge-bottom 1s ease-in-out both;
+    
+}
+
+@keyframes nudge-bottom {
+	
+    0% {
+        -webkit-transform: translateY(50px);
+        transform: translateY(50px);
+
+    }
+
+    100% {
+	    
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+
+    }
+    
+}
+
+@media screen and (max-width: 1040px) {
+	
+	:root {
+	
+		--pic-padding: 4px;
+	
+	}
+	
+	
+	h1, h2 {
+		
+		margin-left: 16px;
+		margin-right: 0px;
+		
+	}
+	
+		h1::before {
+			  
+			left: 20px;	  
+		}	
+		
+	
+	h1 br {
+		
+		display: none;
+		
+	}
+	
+	.content {
+		
+		padding: 0 25px 50px 25px;
+		width: 100%;
+	
+	}
+	
+	article {
+		
+		margin-bottom: 16px;
+		
+	}
+	
+	article h3 {
+		
+		margin-top: 60px;
+	}
+	
+		
+	.flex-row {  
+		
+		display: block;
+	
+	}
+	
+	.mob-display {
+		
+		display: block;
+		
+	}
+	
+	.mob-hide {
+		
+		display: none;
+		
+	}
+	
+	.mob-unflex {
+		
+		display: block;
+		
+	}
+	
+	.intro-text {
+
+		width: 100%;	
+
+	}	
+	
+	.left-box,
+	.right-box {
+		
+		width: 100%;
+	
+	}
+
+	.small-text {
+		
+		margin-top: 20px;
+		font-size: 0.86em;
+		font-weight: normal;
+		
+	}	
+	
+
+	.btns { 
+		
+		margin-top: 4px;
+		cursor: pointer;
+	}
+	
+	.btns a { 
+		
+		font-size: 13px;
+	
+	}
+	
+	.section-plan .btns {
+		
+		margin: 10px 0;
+        
+		
+	}
+		
+	.mob-stack {
+		
+		flex-direction: column;
+		
+	}
+	
+		.mob-stack.pic-grid.c2 .column {
+		
+			width: 100%;
+		
+		}	
+		
+		
+	#explore .pic-grid-con{
+		
+		padding-left: 0%;
+		margin-top: 0;
+	
+	}
+
+
+	#spec {
+		
+		height: auto !important;
+	}
+	
+	
+		#spec li {
+			
+			padding: 5% 14% 5% 0;
+		    padding-right: 10%;
+			font-size: 1em;
+	
+	    
+		}
+	
+	.bike-box {
+		
+		margin-top: 14px;
+	}
+	
+	.bike-box img {
+		
+		width: 100%
+		
+	}
+	
+	#balance p {
+		
+		padding-bottom: 12px;
+	}
+	
+	#contact .left-box h3:first-child {
+		
+			margin-top: 16%;
+	}	
+	
+	#contact h3 {
+		
+			margin-top: 7%;
+	}	
+	
+}
+
+
+/*  -------  new stuff added Sat 22 Oct 2022 03:44:24  --------- */
+
+#four-imgs{ 
+
+    background: white; 
+}
+
+.grid {
+    /* height: 980px; */
+    /* max-width: 100%; */
+}
+
+.top-img {
+    width: 100%;
+    padding-bottom: var(--pic-padding);
+}
+
+.bottom-grid {
+    display: flex;
+}
+
+.left-pic {
+    width: 66.66%;
+    /* max-height: 700px; */
+    padding-right: 4px;
+}
+
+.right-pics {
+    width: 100%;
+    height: 50%;
+    /* max-height: 340px; */
+}
+
+.right-col {
+    width: 33.33%;
+    padding-left: var(--pic-padding);
+}
+
+.right-pics:last-child{
+    padding-top: var(--pic-padding);
+    }
+
+
+@media screen and (max-width: 1040px) {
+
+    .right-pics:last-child, .right-col, .top-img{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .right-pics {
+        display: block;
+        width: 100%;
+    }
+
+    .bottom-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .right-col {
+        width: 100%;
+    }
+
+    .left-pic {
+        width: 100%;
+    }
+
+    /* Tue 25 Oct 2022 13:12:17 :   */
+    #four-imgs img{
+        height: 400px;
+        padding: 0px;
+        margin: 0;    
+        
+    }
+
+
+
+}
+
+
+
+
+/*  -------  new stuff added Sat 22 Oct 2022 03:44:24  end --------- */

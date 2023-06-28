@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Final Jubilee</title>
+      <link rel="stylesheet" href="css/carousel.css">
+      <link rel="stylesheet" href="css/main.css">
+      <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap" rel="stylesheet">
+      <script src="JS/carousel.js"></script>
+   </head>
+   <body>
+      <div id="nav-overlay" onclick="togNav()">
+         <nav id="nav">
+            <a class='cross' click="togNav()">
+                <img class='cross' alt="cross" src="./images/cross.png">
+            </a>
+            <a href="#spec">specification</a>
+            <a href="#site-plan">site plan</a>
+            <a href="#floor-plans">accommodation</a>
+            <a href="#cathedral">st albans</a>
+            <a href="#explore">shopping and lifestyle</a>
+            <a href="#balance">work/life balance</a>
+             <a href="#travel">location</a>
+            <a href="#contact">contact / downloads</a>
+         </nav>
+      </div>
+      <header>
+         <div class="header-container">
+            <div class="hamburger" onclick="togNav()">
+               <div></div>
+               <div></div>
+               <div></div>
+            </div>
+            <div id="branding-box">
+               <img id="jubilee" src="images/jubilee-square.png" alt="jubilee logo">
+               <h6 id="address">VICTORIA STREET, ST ALBANS, AL1 3HZ</h6>
+            </div>
+            <div><img id="watermark" src="images/svg/watermark.svg" alt="watermark"></div>
+         </div>
+      </header>
+      <main>
+         <!--  SECTION 1.  -->
+         <section id="banner" style="background-image: url(images/bkg_start.jpeg); background-size: cover; height: 890px;">
+            <div class="content">
+               <h1> A stunning new mixed <br> use development</h1>
+            </div>
+            <img class="section-footer" src="./images/green-flower.png" alt="flower"> 
+         </section>
+
+<!-- SECTION four-imgs -->
+<section id="four-imgs">
+<div class="grid">
+
+   <!-- top -->
+   <img class="top-img" src="./images/four-img/thumbnail_render_0.jpeg" alt="render_0">
+
+   <div class="bottom-grid">
+      <!-- left -->
+         <img  class="left-pic" src="./images/four-img/thumbnail_render_1.jpg" alt="render_1">
+      <!-- right -->
+      <div class="right-col">
+         <img class="right-pics" id="marker" src="./images/four-img/render_2.jpg" alt="render_2">
+         <img class="right-pics" id="render_1" src="./images/four-img/render_3.jpg" alt="redner_3"> 
+      </div>
+
+   </div>
+
+</div>
+</section>
+
+         <!-- SECTION  spec  -->
+         <section id="spec" class="js-scroll fade-in-bottom" style="background-image: url(images/bkg_spec.jpeg); background-size: cover; height: 890px;">
+            <div class="content">
+               <h1>a new build <br> developed to the <br> highest standards</h1>
+               <p>Grade-A Offices City Centre Developmemt. From 1,600 sq ft to 54,766 sq ft</p>
+               <ul>
+                  <li>Suspended ceilings <br> with inset led lighting  <img width="12%" src="./images/icon/light.png" alt="lighting">  </li>
+                  <li>New air coinditioning - VRF <img width="12%" src="./images/icon/snowflake.png" alt="snowflake"></li>
+                  <li>Lifts to all floors <img width="12%" src="./images/icon/lift.png" alt="lift"> </li>
+                  <li>On site showers <img width="12%" src="./images/icon/shower.png" alt="shower"> </li>
+                  <!-- col 2. -->
+                  <li >Car parking 1:1000 sq ft<img width="8%" src="./images/icon/parking-sign.png" alt="parking-sign"></li>
+                  <li>vehicle charging points <img width="12%" src="./images/icon/charge.png" alt="electric-charging"> </li>
+                  <li>Secure cycle storage <img width="12%" src="./images/icon/bike-lock.png" alt="bike-lock"></li>
+                  <li>Full access raised floors</li>
+                  <li>Anticipated EPC rating B</li>
+                  <li>Private balconies to <br> each 4th floor suite</li>
+               </ul>
+            </div>
+            <img  class="section-footer"  src="./images/green-flower.png" alt="flower"> 
+         </section>
+
+
+         <!--    SECTION  site-plan     -->
+         <section id="site-plan" class="invert-color">
+            <div class="content js-scroll fade-in-bottom">
+               <div class="flex-row">
+                  <div class="left-box">
+                     <article>
+                        <div>
+                           <h1>accommodation</h1>
+                           <h2 class="highlight">site plan</h2>
+                           <div class="btns">
+                              <a class="link-btn" href="#eleanor" onclick="togPlan('eleanor', 1)">eleanor oromorod house</a>
+                              <a class="link-btn" href="#francis" onclick="togPlan('francis', 1)">francis bacon house</a>
+                           </div>
+                        </div>
+                     </article>
+                  </div>
+                  <div class="right-box">
+                     <img width="100%" src="./images/floor-plan.jpg" alt="site plan">
+                  </div>
+               </div>
+            </div>
+            <img class="section-footer" src="./images/green-flower.png" alt="flower"> 
+         </section>
+         </section>
+         <!-- ELEANOR   -->
+         <div id="floor-plans">
+         <section id="eleanor" class="nudge-bottom section-plan">
+            <div class="content js-scroll fade-in-bottom row">
+               <div class="flex-row">
+                  <div>
+                     <article>
+                        <div class="top-text">
+                           <h1>accommodation</h1>
+                           <h2 class="highlight">eleanor oromorod house</h2>
+                           <h2 class="floor-heading">ground floor</h2>
+                        </div>
+                     </article>
+                     <table>
+                        <thead>
+                           <tr>
+                              <td>Floor</td>
+                              <td>Area (sq ft)</td>
+                              <td>Area (sq m)</td>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td>Ground</td>
+                              <td>12,640</td>
+                              <td>1,174.30</td>
+                           </tr>
+                           <tr>
+                              <td>First</td>
+                              <td>4,165</td>
+                              <td>387</td>
+                           </tr>
+                           <tr>
+                              <td>Second</td>
+                              <td>4,165</td>
+                              <td>387</td>
+                           </tr>
+                           <tr>
+                              <td>Third</td>
+                              <td>4,171</td>
+                              <td>387.50</td>
+                           </tr>
+                           <tr>
+                              <td>Fourth <br><small>plus private balcony</small></td>
+                              <td>3,081</td>
+                              <td>286.30</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <div class="carousel-right-box">
+                     <button class='arrow nav-left'> 
+                     <img alt="left-arrow" src="./images/left-arrow.png">
+                     </button>
+                     <div class="carousel">
+                        <div class="carousel-content">
+                           <div class="slide slide-1">
+                              <a href="PDF/Eleanor Ormorod_Ground.pdf" target="_blank">                     
+                              <img width="100%" src="./images/plans/Eleanor Ormorod_Ground.png" alt="Ground Floor">
+                              </a>
+                           </div>
+                           <div class="slide slide-2">
+                              <a href="PDF/Eleanor Ormorod_1st.pdf" target="_blank">  
+                              <img width="100%" src="./images/plans/Eleanor Ormorod_1st.png" alt="1st floor">
+                              </a>
+                           </div>
+                           <div class="slide slide-3">
+                              <a href="PDF/Eleanor Ormorod_2nd.pdf" target="_blank">  
+                              <img width="100%" src="./images/plans/Eleanor Ormorod_2nd.png" alt="2nd floor">
+                              </a>
+                           </div>
+                           <div class="slide slide-4"> 
+                              <a href="PDF/Eleanor Ormorod_4th.pdf" target="_blank">  
+                              <img width="100%" src="./images/plans/Eleanor Ormorod_4th.png" alt="4th floor">
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <button class='arrow nav-right'> 
+                     <img alt="right-arrow" src="./images/right-arrow.png">
+                     </button>
+                  </div>
+                  <!-- carsouel 1 finish -->
+               </div>
+          
+               <article>
+               <div class="btns">
+                <a class="link-btn" data-link="francis"> view francis bacon house</a>
+               </div>
+               </article>
+         
+
+            </div>
+            <img class="section-footer" src="./images/green-flower.png" alt="flower"> 
+         </section>
+         <!-- FRANCIS -->
+         <section id="francis" class="nudge-bottom section-plan">
+            <div class="content js-scroll fade-in-bottom row">
+               <div class="flex-row">
+                  <div>
+                     <article>
+                        <div class="top-text">
+                           <h1>accommodation</h1>
+                           <h2 class="highlight">francis bacon house</h2>
+                           <h2 class="floor-heading">ground floor</h2>
+                        </div>
+                     </article>
+                     <table>
+                        <thead>
+                           <tr>
+                              <td>Floor</td>
+                              <td>Area (sq ft)</td>
+                              <td>Area (sq m)</td>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td>Ground</td>
+                              <td>10,722</td>
+                              <td>996.1</td>
+                           </tr>
+                           <tr>
+                              <td>First</td>
+                              <td>3,303</td>
+                              <td>306.9</td>
+                           </tr>
+                           <tr>
+                              <td>Second</td>
+                              <td>3,303</td>
+                              <td>306.9</td>
+                           </tr>
+                           <tr>
+                              <td>Third</td>
+                              <td>3,303</td>
+                              <td>306.9</td>
+                           </tr>
+                           <tr>
+                              <td>Fourth</td>
+                              <td>2,389</td>
+                              <td>221.9</td>
+                           </tr>
+                           <tr>
+                              <td> <small> Bricket Rd  <br> ground floor suite 1 </small> </td>
+                              <td>1,926</td>
+                              <td>178.9</td>
+                           </tr>
+                           <tr>
+                              <td> <small> Bricket Rd  <br> ground floor suite 2 </small> </td>
+                              <td>1,599</td>
+                              <td>148.5</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <!-- second carsouel -->
+                  <div class="carousel-right-box">
+                     <button class='arrow nav-left'> 
+                     <img alt="left-arrow" src="./images/left-arrow.png">
+                     </button>
+                     <div class="carousel">
+                        <div class="carousel-content">
+                           <div class="slide slide-1">
+                              <a href="PDF/Francis Bacon_Ground.pdf" target="_blank">  
+                              <img width="100%" src="./images/plans/Francis Bacon_Ground.png" alt="Ground floor">
+                              </a>
+                           </div>
+                           <div class="slide slide-2">
+                              <a href="PDF/Francis Bacon_1st.pdf" target="_blank">    
+                              <img width="100%" src="./images/plans/Francis Bacon_1st.png" alt="1st floor">
+                              </a>
+                           </div>
+                           <div class="slide slide-3">
+                              <a href="PDF/Francis Bacon_2nd.pdf" target="_blank">  
+                              <img width="100%" src="./images/plans/Francis Bacon_2nd.png" alt="2nd Floor">
+                              </a>
+                           </div>
+                           <div class="slide slide-4"> 
+                              <a href="PDF/Francis Bacon_3rd.pdf" target="_blank">  
+                              <img width="100%" src="./images/plans/Francis Bacon_3rd.png" alt="3rd floor">
+                              </a>
+                           </div>
+                           <div class="slide slide-5"> 
+                              <a href="PDF/Francis Bacon_4th.pdf" target="_blank">  
+                              <img width="100%" src="./images/plans/Francis Bacon_4th.png" alt="4th floor">
+                              </a>
+                           </div>
+                           <div class="slide slide-6"> 
+                              <a href="PDF/Francis Bacon_Lower_Ground.pdf" target="_blank">   
+                              <img width="100%" src="./images/plans/Francis Bacon_Lower_Ground.png" alt="Lower Ground">
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <button class='arrow nav-right'>
+                     <img alt="right-arrow" src="./images/right-arrow.png">
+                     </button>
+                  </div>
+                  <!-- carsouel finish -->
+               </div>
+               
+               <div class="btns">
+                  <a class="link-btn" data-link="eleanor">View eleanor oromorod house</a>
+               </div>
+
+            </div>
+            <img class="section-footer" src="./images/green-flower.png" alt="flower"> 
+         </section>
+         </div>
+         <!-- SECTION 6  -  ST ALBANS-->
+         <section id="cathedral" class="invert-color scroll-container">
+            <div class="content multi-pic scroll-element js-scroll fade-in-bottom">
+               <article class="mob-unflex">
+                  <h1> a cathedral <br> city steeped <br> in history</h1>
+                  <div class="intro-text small-text mobile-block">
+                     <p>The property is located in the commercial district of St Albans, just a short walk from some of the city's best
+                        retail
+                        and leisure facilities. Its prime location provides easy access to a range of shops and many excellent restaurants,
+                        making it easy to pick up a treat or meet up with friends for dinner.
+                     </p>
+                     <p>The city's parks and beautiful historic grounds provide opportunities for a wide range of leisure activities and are
+                        where the city hosts many special events.
+                     </p>
+                     <p>With so much going for it, it's no wonder that St Albans is a highly desirable place to work and live.
+                     </p>
+                  </div>
+               </article>
+               <div class="pic-grid c3 height-fill">
+                  <div class="column" style="width: 40%">
+                     <img class="pic-base" src="./images/cathedral/cathedral1.jpg" alt="cathedral1">
+                  </div>
+                  <div class="column" style="width: 30%">
+                     <img src="./images/cathedral/cath2.jpg" alt="cathedral2">
+                     <img src="./images/cathedral/cath4.jpg" alt="cathedral4">
+                  </div>
+                  <div class="column" style="width: 30%">
+                     <img src="./images/cathedral/cathedral3.jpg" alt="cathedral3">
+                     <img src="./images/cathedral/cathedral5.jpg" alt="cathedral5">
+                  </div>
+               </div>
+               <div class="pic-grid c2 mob-stack">
+                  <div class="column">
+                     <img src="./images/cathedral/location.jpg" alt="map">
+                  </div>
+                  <div class="column">
+                     <img id="marker" src="./images/cathedral/markers.jpg" alt="markers"> 
+                  </div>
+               </div>
+            </div>
+            <img class="section-footer"  src="./images/green-flower.png" alt="flower">     
+         </section>
+         <!-- SECTION - EXPLORE   -->
+         <section id="explore" class="invert-color scroll-container">
+            <div class="content multi-pic scroll-element js-scroll fade-in-bottom">
+               <article class="mob-unflex">
+                  <h1>explore a <br>thriving <br> social scene</h1>
+                  <div class="intro-text small-text">
+                     <p>Eat global street food on market days, share a pint of local ale in a cosy gastro pub, or experience fine dining in one of the city's best restaurants. Food and drink is serious business in St Albans.
+                     </p>
+                     <p>The city has a thriving café culture and there are meals for every taste and budget. Dine in style, grab a family-friendly bite, and experience flavours from around the world as well as locally sourced ingredients.
+                     </p>
+                  </div>
+               </article>
+               <div class="pic-grid-con">
+                  <div class="pic-grid">
+                     <div class="row">
+                        <img src="./images/explore/dinner.jpg" alt="dinner">
+                        <img src="./images/explore/cote.jpg" alt="cote">
+                     </div>
+                  </div>
+                  <div class="pic-grid">
+                     <div class="row">
+                        <img src="./images/explore/coffee.jpg" alt="coffee">
+                        <img src="./images/explore/ivy.jpg" alt="ivy">
+                        <img src="./images/explore/cocktail.jpg" alt="cocktail">
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <img  class="section-footer" src="./images/green-flower.png" alt="flower">     
+         </section>
+        <!-- SECTION - BALANCE -->
+         <section id="balance" class=" invert-color scroll-container">
+            <div class="content multi-pic scroll-element js-scroll fade-in-bottom">
+               <article class="mob-unflex">
+                  <h1> find your <br> perfect <br> work/life <br> balance</h1>
+                  <div class="bike-box">
+                     <img id="bike-clip" width="100%" src="./images/explore/bike.jpg" alt="biking">
+                  </div>
+               </article>
+               <p class="small-text mob-display">
+                  St Albans is an excellent place to perfect your work/life balance. Work out or go for a dip at one of the nearby
+                  leisure
+                  centres, swimming pools and gyms, or tee off at the world class golf course at the Centurion Club. For outdoor
+                  enthusiasts, the area also has wonderful walks and bike rides in the stunning local countryside.
+               </p>
+               <div class="pic-grid c3">
+                  <div class="column" style="width: 40%">
+                     <p class="small-text mob-hide">
+                        St Albans is an excellent place to perfect your work/life balance. Work out or go for a dip at one of the nearby
+                        leisure
+                        centres, swimming pools and gyms, or tee off at the world class golf course at the Centurion Club. For outdoor
+                        enthusiasts, the area also has wonderful walks and bike rides in the stunning local countryside.
+                     </p>
+                     <img class="pic-base"  width="100%" src="./images/explore/gym.jpg" alt="gym">
+                  </div>
+                  <div class="column">
+                     <img src="./images/explore/yoga.jpg" alt="yoga">
+                     <img src="./images/explore/golf.jpg" alt="golf">
+                  </div>
+                  <div class="column"> 
+                     <img src="./images/explore/swim.jpg" alt="swim">
+                     <img src="./images/explore/gym2.jpg" alt="gym2">
+                  </div>
+               </div>
+               <img class="section-footer" src="./images/green-flower.png" alt="flower"> 
+            </div>
+         </section>
+         <section id="goodcompany" class="invert-color">
+            <div class="content js-scroll fade-in-bottom">
+               <article class="row">
+                  <h1>in good <br> company</h1>
+                  <h3>just some of the big brand names that have <br> offices in the St Albans area</h3>
+               </article>
+               <img id="brands" src="./images/goodcompany.png" alt="companys">
+               <img class="section-footer" src="./images/green-flower.png" alt="flower"> 
+         </section>
+         <!-- SECTION - TRAVEL  -->
+         <section id="travel" class="invert-color scroll-container">
+         <div class="content multi-pic scroll-element js-scroll fade-in-bottom">
+         <article class="mob-unflex">
+         <h1>travel</h1>
+         <div class="intro-text">
+         <h3> WITH FAST CONNECTIONS TO THE CENTRE OF LONDON  <br> AND THE SURROUNDING AREAS. </h3>
+         <p class="small-text">The property is located just a few minutes walk from St Albans station
+         with it's fast connections by Thames link rail, you can be at London St Pancras International in 18 minutes.
+         </p>
+         <p class="small-text"> Major motorways are a short drive away with the M25 (9 minutes), M1 (12 minutes). Heathrow &
+         Luton Airports are with in 30 minutes.
+         </p>
+         </div>
+         </article>
+         <div class="pic-grid">
+         <div class="row"> 
+         <img src="./images/travel/map.jpg" alt="map" >
+         <img src="./images/travel/bytrain.jpg" alt="distance">
+         </div>   
+         </div>      
+         <div class="pic-grid">    
+         <div class="row">
+         <img src="./images/travel/train-station.jpg" alt="train-station">
+         <img src="./images/travel/sign.jpg" alt="sign" >
+         </div>
+         </div>
+         </div>
+         <img class="section-footer" src="./images/green-flower.png" alt="flower"> 
+         </div>
+         </section>
+		 <!-- SECTION - CONTACT   -->
+         <section id="contact" class="js-scroll fade-in-bottom">
+            <div class="content">
+               <h1>contact</h1>
+               <div class="flex-row">
+                  <div class="left-box">
+                     <h3>TERMS</h3>
+                     <p>Upon application</p>
+                     <h3>VIEWING</h3>
+                     <p>Strictly by appointment through the agents.</p>
+                     <h3>MATTHEW BOWEN</h3>
+                     <p class="spacing">T: 01727 843232</p>
+                     <p class="spacing"><a href="matthew.bowen@argroup.co.uk">matthew.bowen@argroup.co.uk</a></p>
+                     <img width="40%" src="./images/logos/ai-logo2.jpg" alt="Raffety">
+                  </div>
+                  <div class="right-box">
+                     <h3>DOWNLOADS</h3>
+                     <a href="Jubilee_Square_brochure.pdf" download="Jubilee_Square_brochure.pdf">
+                        <p class="highlight">Brochure</p>
+                     </a>
+                  </div>
+               </div>
+               <p class="small-text">
+                  DISCLAIMER:  <br>
+                  The Agents for themselves and for the vendors/lessors of this property, whose agents they are, give
+                  notice
+                  that: (1) These particulars are set out as a general guideline only for the guidance of prospective
+                  purchasers/lessees
+                  and do not constitute the whole, nor any part, of an offer or contract. (2) No person employed by The Agents has any
+                  authority to enter into any contract, nor make or give any warranty or representation whatsoever in relation to this
+                  property. The terms quoted and all subsequent negotiations are subject to contract. (3) All descriptions,
+                  dimensions,
+                  references to condition, necessary permissions for use and occupation, and any other details, are given in good
+                  faith
+                  and are believed to be correct at the time of compilation, but an intending purchasers/lessees should not rely on
+                  them
+                  as statements or representations of fact and must satisfy themselves as to their accuracy. (4) Any comment on
+                  council
+                  tax/rateable value/rates payable, and permitted planning use, is given in good faith from information informally
+                  supplied to us. Intending purchasers must seek confirmation direct from the relevant Local Authority. (5) All plant,
+                  machinery, equipment, services and fixtures & fittings referred to were present at the date of first inspection, but
+                  have not been tested and The Agents give no warranty or representation as to their condition, operation or fitness
+                  for
+                  the intended purpose. (6) The Agents do not hold themselves responsible, in negligence or otherwise, for any loss
+                  arising from the use of those particulars, nor for any expense incurred in viewing the premises or for abortive
+                  journeys. (7) All prices/rents are exclusive of VAT (unless otherwise stated) and interested par-ties should take
+                  independent advice as to the VAT and general taxation implications of proceeding. (8) For all sales it is a legal
+                  requirement that we make ID checks on the purchaser and verify the source of funds.
+               </p>
+            </div>
+            <img class="section-footer"  src="./images/green-flower.png" alt="flower"> 
+         </section>
+      </main>
+   </body>
+   <script src="JS/effects.js"></script>
+</html>

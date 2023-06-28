@@ -1,0 +1,60 @@
+@media screen and (max-width: 600px) {
+
+    main {
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    /* -- Header elements --  */
+
+    #jubliee {
+        height: 80%;
+    }
+
+    #address {
+        font-size: 0.5em;
+        top: 50%;
+        width: 70%;
+    }
+
+    #flower {
+        height: 230%;
+        top: -18%;
+        right: -20%;
+    }
+
+   
+}
+
+
+/* Samsung  devices */
+@media only screen and (max-width: 300px) {
+
+    #address {
+        display: none;
+    }
+
+    #address-btm {
+        display: block;
+        text-align: center;
+    }
+
+    #cover-title {
+        margin: 1%;
+        margin-top: 5%;
+        text-align: center;
+        max-width: 90vw;
+    }
+
+    #jubliee {
+        height: 90%;
+    }
+
+    #flower {
+        height: 220%;
+        top: -18%;
+        right: -28%;
+    }
+
+}
